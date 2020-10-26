@@ -65,6 +65,8 @@ public class MapEx1 {
 			System.out.println(result);
 		}
 		
+		map.put(31, "hong");
+		System.out.println(map.get(31));
 		
 	}
 	
