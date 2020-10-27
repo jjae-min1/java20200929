@@ -1,0 +1,47 @@
+1:package Chap18.textbook.exercises.no7;
+2:import java.io.*;
+3:public class AddLineNumberExample {
+4:	public static void main(String[] args) throws Exception{
+5:		String filePath = "src/chap18/textbook/exercises/no7/AddLineNumberExample.java";
+6:		
+7:		FileReader fr = new FileReader(filePath);
+8:		BufferedReader br = new BufferedReader(fr);
+9:		FileWriter fw = new FileWriter("copy-AddLineNumberExample");
+10:		BufferedWriter bw = new BufferedWriter(fw);
+11:		
+12:		
+13:		
+14://		String line1;
+15://		int cnt = 0;
+16://		while((line1 = br.readLine()) != null) {
+17://			cnt++;
+18://
+19://			System.out.println(cnt + ":" + line1);
+20://			
+21://		}
+22:		
+23:		String line;
+24:		int num = 0;
+25:		String LineNum = null;
+26:		
+27:		while((line = br.readLine()) != null) {
+28:			num++;
+29:			LineNum = num + ":";
+30:			bw.write(LineNum);
+31:			bw.write(line);
+32:			bw.write("\n");
+33:			
+34:			
+35:			
+36:		}
+37:		
+38:		
+39:		bw.close();
+40:		fw.close();
+41:		br.close();
+42:		fr.close();
+43:		
+44:		
+45:	}
+46:
+47:}
