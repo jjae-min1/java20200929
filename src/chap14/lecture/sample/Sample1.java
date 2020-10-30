@@ -28,7 +28,7 @@ public class Sample1 {
 //		매개변수자리가 Consumer 인터페이스 자리이고
 //		Consumer 인터페이스는 FunctionalInterface이므로
 //		아래와 같이 람다식으로 한번에 표현 가능
-		names.forEach(s -> System.out.println(s));
+		names.forEach(s -> System.out.println(s));  
 		
 	}
 	
